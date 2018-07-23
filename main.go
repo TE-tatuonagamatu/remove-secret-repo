@@ -52,7 +52,7 @@ func main() {
 		panic("Failed to marshal glide.yaml")
 	}
 
-	f, err := ioutil.TempFile("", "glide")
+	f, err := ioutil.TempFile(".", "glide")
 	if err != nil {
 		panic(err)
 	}
